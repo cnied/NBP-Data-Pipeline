@@ -13,12 +13,21 @@ format = 'json'
 
 
 def db_connection():
+    # Zmienne środowiskowe, które próbujemy odczytać
+    db_host = os.getenv('POSTGRES_HOST' , 'postgres')
+    db_name = os.getenv('POSTGRES_DB', 'airflow')
+    db_user = os.getenv('POSTGRES_USER', 'airflow')
+    db_password = os.getenv('POSTGRES_PASSWORD', 'airflow')
+    db_port = os.getenv('POSTGRES_PORT', 5432) # Pamiętaj, port powinien być integer lub string
+
     conn = psycopg2.connect(
-        host=os.getenv('POSTGRES_HOST', 'localhost'),
-        database=os.getenv('POSTGRES_DB', 'airflow'),
-        user=os.getenv('POSTGRES_USER', 'airflow'),
-        password=os.getenv('POSTGRES_PASSWORD', 'airflow'),
-        port=os.getenv('POSTGRES_PORT', 5432)
+        host=db_host,
+        database=db_name,
+        user=db_user,
+        password=db_password,
+        port=db_port,
+        # DODAJ JAWNE KODOWANIE, ABY OMINĄĆ PROBLEM Z SYSTEMOWYMI PARAMETRAMI:
+        options='-c client_encoding=UTF8' 
     )
     return conn
 
@@ -78,4 +87,8 @@ def insert_data_to_db():
     conn.close()
 
 db_connection()
+print("Połączono z bazą danych.")
 table_creation()
+print("Tabela utworzone lub już istnieje")
+insert_data_to_db()
+print("Dane zostały wstawione do bazy danych.")

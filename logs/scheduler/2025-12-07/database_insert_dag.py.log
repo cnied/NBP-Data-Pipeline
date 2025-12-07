@@ -1389,3 +1389,899 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 	Is the server running on that host and accepting TCP/IP connections?
 [2025-12-07T13:50:08.041+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
 [2025-12-07T13:50:08.058+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.240 seconds
+[2025-12-07T13:50:38.121+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:50:38.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:50:38.124+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:50:38.124+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:50:38.336+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:50:38.333+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:50:38.337+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:50:38.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.238 seconds
+[2025-12-07T13:51:08.470+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:51:08.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:51:08.472+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:51:08.472+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:51:08.679+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:51:08.676+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:51:08.680+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:51:08.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.231 seconds
+[2025-12-07T13:51:38.824+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:51:38.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:51:38.826+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:51:38.826+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:51:39.017+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:51:39.013+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:51:39.018+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:51:39.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.216 seconds
+[2025-12-07T13:52:09.164+0000] {processor.py:161} INFO - Started process (PID=270) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:52:09.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:52:09.166+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:52:09.165+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:52:09.370+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:52:09.367+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:52:09.372+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:52:09.390+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.230 seconds
+[2025-12-07T13:52:39.508+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:52:39.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:52:39.510+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:52:39.510+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:52:39.706+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:52:39.703+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:52:39.707+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:52:39.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.223 seconds
+[2025-12-07T13:53:09.842+0000] {processor.py:161} INFO - Started process (PID=282) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:53:09.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:53:09.844+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:53:09.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:53:10.043+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:53:10.039+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:53:10.044+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:53:10.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.222 seconds
+[2025-12-07T13:53:40.178+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:53:40.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:53:40.180+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:53:40.179+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:53:40.391+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:53:40.388+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:53:40.392+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:53:40.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.238 seconds
+[2025-12-07T13:54:10.533+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:54:10.533+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:54:10.535+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:54:10.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:54:10.750+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:54:10.746+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:54:10.751+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:54:10.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.241 seconds
+[2025-12-07T13:54:40.920+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:54:40.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:54:40.922+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:54:40.922+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:54:41.130+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:54:41.126+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:54:41.131+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:54:41.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.236 seconds
+[2025-12-07T13:55:11.273+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:55:11.274+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:55:11.275+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:55:11.275+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:55:11.480+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:55:11.477+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:55:11.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:55:11.497+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.228 seconds
+[2025-12-07T13:55:41.616+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:55:41.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:55:41.618+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:55:41.618+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:55:41.825+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:55:41.821+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:55:41.826+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:55:41.845+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.234 seconds
+[2025-12-07T13:56:11.964+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:56:11.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:56:11.967+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:56:11.966+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:56:12.189+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:56:12.185+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:56:12.190+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:56:12.209+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.249 seconds
+[2025-12-07T13:56:42.327+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:56:42.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:56:42.329+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:56:42.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:56:42.538+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:56:42.534+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 80, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 16, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:56:42.539+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:56:42.559+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.236 seconds
+[2025-12-07T13:57:08.670+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:57:08.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:57:08.672+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:57:08.671+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:57:08.884+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:57:08.880+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:57:08.885+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:57:08.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.236 seconds
+[2025-12-07T13:57:39.026+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:57:39.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:57:39.028+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:57:39.028+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:57:39.237+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:57:39.234+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:57:39.238+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:57:39.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.236 seconds
+[2025-12-07T13:58:09.385+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:58:09.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:58:09.387+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:58:09.387+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:58:09.593+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:58:09.590+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:58:09.594+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:58:09.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.233 seconds
+[2025-12-07T13:58:39.735+0000] {processor.py:161} INFO - Started process (PID=349) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:58:39.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T13:58:39.738+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:58:39.738+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:58:39.951+0000] {logging_mixin.py:188} INFO - [2025-12-07T13:58:39.948+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T13:58:39.952+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T13:58:39.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.238 seconds
+[2025-12-07T14:00:29.827+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:00:29.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:00:29.829+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:00:29.829+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:00:30.723+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:00:30.719+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:00:30.724+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:00:30.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.918 seconds
+[2025-12-07T14:01:00.891+0000] {processor.py:161} INFO - Started process (PID=246) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:01:00.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:01:00.893+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:01:00.893+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:01:01.105+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:01:01.101+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:01:01.106+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:01:01.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.235 seconds
+[2025-12-07T14:01:31.242+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:01:31.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:01:31.244+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:01:31.244+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:01:31.459+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:01:31.455+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:01:31.460+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:01:31.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.239 seconds
+[2025-12-07T14:02:01.598+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:02:01.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:02:01.600+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:02:01.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:02:01.814+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:02:01.810+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:02:01.815+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:02:01.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.240 seconds
+[2025-12-07T14:02:31.958+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:02:31.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:02:31.960+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:02:31.960+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:02:32.177+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:02:32.173+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:02:32.178+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:02:32.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.242 seconds
+[2025-12-07T14:03:02.320+0000] {processor.py:161} INFO - Started process (PID=297) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:02.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:03:02.323+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:03:02.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:02.528+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:03:02.525+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:03:02.529+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:02.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.229 seconds
+[2025-12-07T14:03:32.664+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:32.665+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:03:32.667+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:03:32.666+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:32.879+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:03:32.873+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2025-12-07T14:03:32.880+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:32.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.235 seconds
+[2025-12-07T14:03:55.750+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:55.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:03:55.752+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:03:55.752+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:55.957+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:03:55.954+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:03:55.958+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:03:55.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.229 seconds
+[2025-12-07T14:04:26.109+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:04:26.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:04:26.111+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:04:26.111+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:04:26.309+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:04:26.306+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:04:26.310+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:04:26.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.221 seconds
+[2025-12-07T14:04:56.437+0000] {processor.py:161} INFO - Started process (PID=356) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:04:56.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:04:56.439+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:04:56.439+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:04:56.640+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:04:56.637+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:04:56.641+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:04:56.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.229 seconds
+[2025-12-07T14:05:26.788+0000] {processor.py:161} INFO - Started process (PID=362) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:05:26.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:05:26.790+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:05:26.790+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:05:26.995+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:05:26.992+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:05:26.996+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:05:27.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.234 seconds
+[2025-12-07T14:05:57.140+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:05:57.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:05:57.142+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:05:57.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:05:57.348+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:05:57.344+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:05:57.349+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:05:57.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.232 seconds
+[2025-12-07T14:06:27.485+0000] {processor.py:161} INFO - Started process (PID=374) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:06:27.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:06:27.487+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:06:27.487+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:06:27.685+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:06:27.682+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:06:27.686+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:06:27.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.224 seconds
+[2025-12-07T14:06:57.819+0000] {processor.py:161} INFO - Started process (PID=380) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:06:57.819+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:06:57.821+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:06:57.820+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:06:58.029+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:06:58.025+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:06:58.030+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:06:58.051+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.237 seconds
+[2025-12-07T14:07:41.329+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:07:41.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:07:41.331+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:07:41.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:07:42.037+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:07:42.034+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:07:42.038+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:07:42.055+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.730 seconds
+[2025-12-07T14:08:12.199+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:08:12.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:08:12.201+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:08:12.201+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:08:12.381+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:08:12.377+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:08:12.382+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:08:12.397+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.203 seconds
+[2025-12-07T14:08:42.513+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:08:42.514+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:08:42.515+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:08:42.515+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:08:42.727+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:08:42.724+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:08:42.729+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:08:42.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.243 seconds
+[2025-12-07T14:09:12.869+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:12.869+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:09:12.870+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:09:12.870+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:13.078+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:09:13.075+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:09:13.079+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:13.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.233 seconds
+[2025-12-07T14:09:43.221+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:43.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:09:43.223+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:09:43.223+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:43.422+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:09:43.418+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/database_insert_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/database_insert_dag.py", line 89, in <module>
+    db_connection()
+  File "/opt/airflow/dags/database_insert_dag.py", line 23, in db_connection
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+[2025-12-07T14:09:43.423+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:43.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.225 seconds
+[2025-12-07T14:09:45.238+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:45.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:09:45.240+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:09:45.240+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:45.441+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:09:45.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.220 seconds
+[2025-12-07T14:10:01.547+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:01.547+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:10:01.548+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:10:01.548+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:01.762+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:01.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.229 seconds
+[2025-12-07T14:10:15.614+0000] {processor.py:161} INFO - Started process (PID=342) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:15.615+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:10:15.616+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:10:15.616+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:15.827+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:10:15.830+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:10:15.831+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:15.842+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.231 seconds
+[2025-12-07T14:10:20.871+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:20.872+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:10:20.873+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:10:20.873+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:21.081+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:10:21.085+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:10:21.086+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:21.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.229 seconds
+[2025-12-07T14:10:51.219+0000] {processor.py:161} INFO - Started process (PID=371) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:51.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:10:51.221+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:10:51.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:51.429+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:10:51.432+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:10:51.433+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:10:51.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.230 seconds
+[2025-12-07T14:11:21.560+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:11:21.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:11:21.562+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:11:21.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:11:21.785+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:11:21.789+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:11:21.790+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:11:21.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.247 seconds
+[2025-12-07T14:11:51.918+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:11:51.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:11:51.921+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:11:51.921+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:11:52.122+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:11:52.125+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:11:52.126+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:11:52.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.223 seconds
+[2025-12-07T14:12:22.263+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:12:22.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:12:22.265+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:12:22.265+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:12:22.479+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:12:22.483+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:12:22.483+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:12:22.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.238 seconds
+[2025-12-07T14:12:34.312+0000] {processor.py:161} INFO - Started process (PID=395) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:12:34.312+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:12:34.313+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:12:34.313+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:12:34.541+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:12:34.545+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:12:34.719+0000] {logging_mixin.py:188} INFO - Dane zostały wstawione do bazy danych.
+[2025-12-07T14:12:34.719+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:12:34.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.424 seconds
+[2025-12-07T14:13:04.843+0000] {processor.py:161} INFO - Started process (PID=418) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:13:04.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:13:04.845+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:13:04.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:13:05.048+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:13:05.051+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:13:05.211+0000] {logging_mixin.py:188} INFO - Dane zostały wstawione do bazy danych.
+[2025-12-07T14:13:05.211+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:13:05.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.384 seconds
+[2025-12-07T14:13:35.355+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:13:35.356+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:13:35.357+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:13:35.357+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:13:35.563+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:13:35.567+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:13:35.733+0000] {logging_mixin.py:188} INFO - Dane zostały wstawione do bazy danych.
+[2025-12-07T14:13:35.733+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:13:35.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.393 seconds
+[2025-12-07T14:14:05.877+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:14:05.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:14:05.880+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:14:05.879+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:14:06.093+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:14:06.097+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:14:07.405+0000] {logging_mixin.py:188} INFO - Dane zostały wstawione do bazy danych.
+[2025-12-07T14:14:07.406+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:14:07.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 1.543 seconds
+[2025-12-07T14:14:37.564+0000] {processor.py:161} INFO - Started process (PID=436) to work on /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:14:37.564+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/database_insert_dag.py for tasks to queue
+[2025-12-07T14:14:37.566+0000] {logging_mixin.py:188} INFO - [2025-12-07T14:14:37.565+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:14:37.774+0000] {logging_mixin.py:188} INFO - Połączono z bazą danych.
+[2025-12-07T14:14:37.778+0000] {logging_mixin.py:188} INFO - Tabela utworzone lub już istnieje
+[2025-12-07T14:14:37.935+0000] {logging_mixin.py:188} INFO - Dane zostały wstawione do bazy danych.
+[2025-12-07T14:14:37.935+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/database_insert_dag.py
+[2025-12-07T14:14:37.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/database_insert_dag.py took 0.388 seconds
