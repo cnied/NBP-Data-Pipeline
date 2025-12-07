@@ -1,6 +1,6 @@
-#from airflow import DAG
-#from airflow.operators.python import PythonOperator
-from datetime import datetime
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from datetime import timedelta, datetime
 import psycopg2
 import os
 import requests
@@ -12,13 +12,23 @@ pd.set_option('display.float_format', lambda x: '%.2f' % x)
 format = 'json'
 
 
+default_args = {
+    'owner': 'cnied',
+    'depends_on_past': False,
+    'email': ['airflow@example.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5),
+}
+
+
 def db_connection():
-    # Zmienne środowiskowe, które próbujemy odczytać
     db_host = os.getenv('POSTGRES_HOST' , 'postgres')
     db_name = os.getenv('POSTGRES_DB', 'airflow')
     db_user = os.getenv('POSTGRES_USER', 'airflow')
     db_password = os.getenv('POSTGRES_PASSWORD', 'airflow')
-    db_port = os.getenv('POSTGRES_PORT', 5432) # Pamiętaj, port powinien być integer lub string
+    db_port = os.getenv('POSTGRES_PORT', 5432) 
 
     conn = psycopg2.connect(
         host=db_host,
@@ -26,7 +36,6 @@ def db_connection():
         user=db_user,
         password=db_password,
         port=db_port,
-        # DODAJ JAWNE KODOWANIE, ABY OMINĄĆ PROBLEM Z SYSTEMOWYMI PARAMETRAMI:
         options='-c client_encoding=UTF8' 
     )
     return conn
@@ -86,9 +95,33 @@ def insert_data_to_db():
     cursor.close()
     conn.close()
 
-db_connection()
-print("Połączono z bazą danych.")
-table_creation()
-print("Tabela utworzone lub już istnieje")
-insert_data_to_db()
-print("Dane zostały wstawione do bazy danych.")
+
+with DAG(
+    start_date=datetime(2025, 1, 1),
+    schedule="@daily",
+    catchup=False,
+    max_consecutive_failed_dag_runs=5,
+    default_args=default_args,
+    description="Aktualizacja danych walut i cen złota w bazie PostgreSQL",
+    dag_id=DAG_ID
+) as dag:
+
+    t1 = PythonOperator(
+        task_id = "db_connection",
+        python_callable=db_connection
+    )
+
+    t2 = PythonOperator(
+        task_id = "table_creation",
+        python_callable=table_creation
+    )
+
+    t3 = PythonOperator(
+        task_id = "insert_data_to_db",  
+        python_callable=insert_data_to_db
+    )
+
+    t1 >> t2 >> t3
+
+
+
