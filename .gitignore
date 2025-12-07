@@ -1,4 +1,5 @@
 .env
-logs/dag_processor_manager
-scheduler
+logs/
+dag_processor_manager
+scheduler/
 dags/__pycache__/
