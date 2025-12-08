@@ -24,7 +24,8 @@ default_args = {
 
 
 def db_connection():
-    db_host = os.getenv('POSTGRES_HOST' , 'postgres')
+
+    db_host = 'postgres' 
     db_name = os.getenv('POSTGRES_DB', 'airflow')
     db_user = os.getenv('POSTGRES_USER', 'airflow')
     db_password = os.getenv('POSTGRES_PASSWORD', 'airflow')
@@ -36,7 +37,7 @@ def db_connection():
         user=db_user,
         password=db_password,
         port=db_port,
-        options='-c client_encoding=UTF8' 
+        options='-c client_encoding=UTF8'
     )
     return conn
 
@@ -73,12 +74,16 @@ def fetch_data():
     
     df['gold_price_per_gram'] = gold_price_pln / df['mid']
 
-
     return df
 
 
 def insert_data_to_db():
-    df = fetch_data()
+    df = fetch_data() 
+    
+    if df is None or df.empty:
+        print("Brak danych do wstawienia. Przeskakuję operację.")
+        return
+
     conn = db_connection()
     cursor = conn.cursor()
 
@@ -106,22 +111,15 @@ with DAG(
     dag_id=DAG_ID
 ) as dag:
 
-    t1 = PythonOperator(
-        task_id = "db_connection",
-        python_callable=db_connection
-    )
-
     t2 = PythonOperator(
         task_id = "table_creation",
         python_callable=table_creation
     )
 
+
     t3 = PythonOperator(
-        task_id = "insert_data_to_db",  
+        task_id = "insert_data_to_db", 
         python_callable=insert_data_to_db
     )
 
-    t1 >> t2 >> t3
-
-
-
+    t2 >> t3
